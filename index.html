@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toto Reda — Webmaster E-commerce & Rédacteur Fiches Produits</title>
+  <meta name="description" content="CV de Toto Reda, spécialiste e-commerce, SEO et rédaction de contenus. +1200 fiches produits, PrestaShop, WordPress, Magento.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="progress"></div>
+
+<!-- ══ NAVBAR ══ -->
+<nav id="nav">
+  <div class="nav-logo">Toto <span>Reda</span></div>
+  <div class="nav-links">
+    <a href="#about">Profil</a>
+    <a href="#experience">Expérience</a>
+    <a href="#skills">Compétences</a>
+    <a href="#education">Formation</a>
+  </div>
+  <a href="#" onclick="window.print();return false;" class="nav-pdf">↓ Télécharger CV</a>
+  <button class="burger" id="burger"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mob" id="mob">
+  <a href="#about">Profil</a>
+  <a href="#experience">Expérience</a>
+  <a href="#skills">Compétences</a>
+  <a href="#education">Formation</a>
+  <a href="#" onclick="window.print();return false;" style="color:var(--accent);font-weight:600">↓ Télécharger CV</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-shape"></div>
+  <div class="hero-inner">
+
+    <!-- LEFT: Identity -->
+    <div>
+      <div class="hero-photo-wrap">
+        <img src="photo.png" alt="Toto Reda" class="hero-photo">
+      </div>
+      <div class="hero-eyebrow">Disponible — Open to work</div>
+      <h1 class="hero-name">Toto<br><em>Reda</em></h1>
+      <div class="hero-role"><span id="typed-text"></span><span id="typed-cursor"></span></div>
+      <div class="hero-divider"></div>
+      <p class="hero-desc">
+        Spécialiste de la <strong>rédaction e-commerce</strong> et de la gestion de sites web.
+        J'ai créé et optimisé <strong>+1 200 fiches produits</strong> sur PrestaShop, WordPress et Magento.
+        Maîtrise du <strong>SEO, analytics et CMS</strong> — opérationnel immédiatement.
+      </p>
+      <div class="hero-btns">
+        <a href="mailto:redatoto000@gmail.com" class="btn-dark">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Me contacter
+        </a>
+        <a href="https://www.linkedin.com/in/redatoto/" target="_blank" class="btn-ghost">LinkedIn →</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num" data-target="1200" data-suffix="+">0</div>
+          <div class="stat-label">Fiches produits</div>
+        </div>
+        <div>
+          <div class="stat-num" data-target="3" data-suffix=" ans">0</div>
+          <div class="stat-label">Expérience</div>
+        </div>
+        <div>
+          <div class="stat-num" data-target="5">0</div>
+          <div class="stat-label">CMS maîtrisés</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Pop-up Windows -->
+    <div class="hero-windows">
+
+      <!-- Window 1: Bonjour 👋 -->
+      <div class="win win-bonjour" id="winBonjour">
+        <div class="win-bar">
+          <div class="wd wd-r"></div>
+          <div class="wd wd-a"></div>
+          <div class="wd wd-g"></div>
+          <div class="win-title">Bonjour.app</div>
+          <button class="win-close">✕</button>
+        </div>
+        <div class="win-body">
+          <div class="win-greeting">
+            <div class="win-av">
+              <img src="photo.png" alt="Toto Reda">
+            </div>
+            <div>
+              <div class="greeting-name">Bonjour, je suis <span>Reda</span> 👋</div>
+              <div class="greeting-sub">Webmaster E-commerce · Paris</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Window 2: Expérience 💼 -->
+      <div class="win win-exp" id="winExp">
+        <div class="win-bar">
+          <div class="wd wd-r"></div>
+          <div class="wd wd-a"></div>
+          <div class="wd wd-g"></div>
+          <div class="win-title">Expérience.app</div>
+          <button class="win-close">✕</button>
+        </div>
+        <div class="win-body">
+          <div class="win-exp-item">
+            <div class="exp-icon">🏢</div>
+            <div>
+              <div class="exp-role">Chargé e-commerce</div>
+              <div class="exp-co">Hubside · Paris</div>
+              <div class="exp-date">2022 — 2024</div>
+            </div>
+          </div>
+          <div class="win-exp-item">
+            <div class="exp-icon">🛒</div>
+            <div>
+              <div class="exp-role">Responsable Rayon</div>
+              <div class="exp-co">Carrefour Market · Nanterre</div>
+              <div class="exp-date">2021 — 2022</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Window 3: Skills 🚀 -->
+      <div class="win win-skills" id="winSkills">
+        <div class="win-bar">
+          <div class="wd wd-r"></div>
+          <div class="wd wd-a"></div>
+          <div class="wd wd-g"></div>
+          <div class="win-title">Skills.app</div>
+          <button class="win-close">✕</button>
+        </div>
+        <div class="win-body">
+          <div class="skill-row">
+            <div class="skill-hd"><span class="skill-n">WordPress</span><span class="skill-p">95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-hd"><span class="skill-n">SEO</span><span class="skill-p">92%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="92%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-hd"><span class="skill-n">PrestaShop</span><span class="skill-p">90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-hd"><span class="skill-n">Google Analytics</span><span class="skill-p">88%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Window 4: Disponible ✅ -->
+      <div class="win win-avail" id="winAvail">
+        <div class="win-bar">
+          <div class="wd wd-r"></div>
+          <div class="wd wd-a"></div>
+          <div class="wd wd-g"></div>
+          <div class="win-title">Statut.app</div>
+          <button class="win-close">✕</button>
+        </div>
+        <div class="win-body">
+          <div class="avail-inner">
+            <div class="avail-dot"></div>
+            <div>
+              <div class="avail-title">Disponible immédiatement</div>
+              <div class="avail-sub">Paris · Remote · CDI / Freelance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<div class="sec-full" id="about" style="background:var(--cream)">
+  <div class="sec">
+    <div class="sec-tag">Profil</div>
+    <h2 class="sec-title">À <span>propos</span></h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Spécialiste de la <strong>rédaction de contenus e-commerce</strong> et de la gestion de sites web, je combine expertise SEO, maîtrise des CMS et sens du détail pour produire des contenus qui convertissent.</p>
+        <p>Chez <strong>Hubside (Paris)</strong>, j'ai administré quotidiennement des plateformes e-commerce et rédigé +1 200 fiches produits optimisées, en coordination avec les équipes marketing, design et technique.</p>
+        <p>Autonome, organisé et <strong>opérationnel immédiatement</strong> — je m'adapte rapidement à tout environnement.</p>
+      </div>
+      <div>
+        <p class="sec-tag" style="margin-bottom:16px">Mots-clés</p>
+        <div class="tags">
+          <span class="tag">SEO</span><span class="tag">WordPress</span><span class="tag">PrestaShop</span>
+          <span class="tag">Magento</span><span class="tag">Shopify</span><span class="tag">Drupal</span>
+          <span class="tag">Google Analytics</span><span class="tag">SEMrush</span>
+          <span class="tag">Copywriting</span><span class="tag">Photoshop</span>
+          <span class="tag">Figma</span><span class="tag">Jira</span>
+          <span class="tag">HTML / CSS</span><span class="tag">Brevo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ EXPERIENCE ══ -->
+<div class="sec-full" id="experience">
+  <div class="sec">
+    <div class="sec-tag">Parcours</div>
+    <h2 class="sec-title">Expé<span>rience</span></h2>
+    <div class="timeline">
+      <div class="tl">
+        <div class="tl-dot"></div>
+        <div class="tl-hd">
+          <div class="tl-role">Chargé de projets e-commerce</div>
+          <div class="tl-date">2022 — 2024</div>
+        </div>
+        <div class="tl-co">Hubside · Paris</div>
+        <ul class="tl-list">
+          <li>Administration et mise à jour quotidienne sur PrestaShop, WordPress et Magento</li>
+          <li>Rédaction et optimisation de <strong>+1 200 fiches produits</strong> : titres, descriptions, caractéristiques techniques</li>
+          <li>Optimisation SEO avancée : titres, méta-descriptions, structuration, balisage</li>
+          <li>Coordination équipes marketing, design et technique pour la mise en ligne</li>
+          <li>Mise en ligne des opérations commerciales et contenus saisonniers</li>
+          <li>Analyse des performances via Google Analytics — tableaux de bord KPI</li>
+        </ul>
+      </div>
+      <div class="tl">
+        <div class="tl-dot"></div>
+        <div class="tl-hd">
+          <div class="tl-role">Responsable de Rayon & Drive</div>
+          <div class="tl-date">2021 — 2022</div>
+        </div>
+        <div class="tl-co">Carrefour Market · Nanterre · Alternance</div>
+        <ul class="tl-list">
+          <li>Gestion opérationnelle d'un rayon : stocks, merchandising, mise en avant produits</li>
+          <li>Analyse des performances commerciales et optimisation des ventes</li>
+          <li>Coordination équipes logistiques et commerciales</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SKILLS ══ -->
+<div id="skills" style="background:var(--cream)">
+  <div class="sec">
+    <div class="sec-tag">Expertise</div>
+    <h2 class="sec-title">Compé<span>tences</span></h2>
+    <div class="skills-grid">
+      <div class="sg">
+        <div class="sg-title">CMS & Plateformes</div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">WordPress</span><span class="s-pct">95%</span></div><div class="s-bar"><div class="s-fill" data-width="95%"></div></div></div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">PrestaShop</span><span class="s-pct">90%</span></div><div class="s-bar"><div class="s-fill" data-width="90%"></div></div></div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">Magento</span><span class="s-pct">80%</span></div><div class="s-bar"><div class="s-fill" data-width="80%"></div></div></div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">Shopify</span><span class="s-pct">75%</span></div><div class="s-bar"><div class="s-fill" data-width="75%"></div></div></div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">Drupal</span><span class="s-pct">65%</span></div><div class="s-bar"><div class="s-fill" data-width="65%"></div></div></div>
+      </div>
+      <div class="sg">
+        <div class="sg-title">SEO & Contenu</div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">Optimisation SEO</span><span class="s-pct">92%</span></div><div class="s-bar"><div class="s-fill" data-width="92%"></div></div></div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">Rédaction / Copywriting</span><span class="s-pct">95%</span></div><div class="s-bar"><div class="s-fill" data-width="95%"></div></div></div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">SEMrush</span><span class="s-pct">80%</span></div><div class="s-bar"><div class="s-fill" data-width="80%"></div></div></div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">HTML / CSS</span><span class="s-pct">70%</span></div><div class="s-bar"><div class="s-fill" data-width="70%"></div></div></div>
+      </div>
+      <div class="sg">
+        <div class="sg-title">Data & Analytics</div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">Google Analytics</span><span class="s-pct">88%</span></div><div class="s-bar"><div class="s-fill" data-width="88%"></div></div></div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">Reporting / KPI</span><span class="s-pct">85%</span></div><div class="s-bar"><div class="s-fill" data-width="85%"></div></div></div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">Excel / Google Sheets</span><span class="s-pct">82%</span></div><div class="s-bar"><div class="s-fill" data-width="82%"></div></div></div>
+      </div>
+      <div class="sg">
+        <div class="sg-title">Outils Digitaux</div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">Photoshop</span><span class="s-pct">78%</span></div><div class="s-bar"><div class="s-fill" data-width="78%"></div></div></div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">Figma</span><span class="s-pct">72%</span></div><div class="s-bar"><div class="s-fill" data-width="72%"></div></div></div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">Jira / Confluence</span><span class="s-pct">80%</span></div><div class="s-bar"><div class="s-fill" data-width="80%"></div></div></div>
+        <div class="s-item"><div class="s-hd"><span class="s-name">Illustrator / Premiere</span><span class="s-pct">65%</span></div><div class="s-bar"><div class="s-fill" data-width="65%"></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ EDUCATION ══ -->
+<div class="sec-full" id="education">
+  <div class="sec">
+    <div class="sec-tag">Formation</div>
+    <h2 class="sec-title">Édu<span>cation</span></h2>
+    <div class="edu-grid">
+      <div class="edu-card"><div class="edu-yr">2022 — 2024</div><div class="edu-deg">Master Webmarketing</div><div class="edu-sch">ESGCI · Paris</div></div>
+      <div class="edu-card"><div class="edu-yr">2021 — 2022</div><div class="edu-deg">Bachelor Marketing & Communication</div><div class="edu-sch">ESGCI · Paris</div></div>
+      <div class="edu-card"><div class="edu-yr">2018 — 2020</div><div class="edu-deg">DUT Techniques de Management</div><div class="edu-sch">EST · Salé, Maroc</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ LANGUAGES + INTERESTS ══ -->
+<div id="languages" style="background:var(--cream)">
+  <div class="sec">
+    <div class="li-grid">
+      <div>
+        <div class="sec-tag">Communication</div>
+        <h2 class="sec-title" style="margin-bottom:32px">Lan<span>gues</span></h2>
+        <div class="lang-grid">
+          <div class="lang-card"><div class="lang-flag">🇫🇷</div><div class="lang-name">Français</div><div class="lang-level">Courant — Écrit & Oral</div></div>
+          <div class="lang-card"><div class="lang-flag">🇬🇧</div><div class="lang-name">Anglais</div><div class="lang-level">Courant — Écrit & Oral</div></div>
+          <div class="lang-card"><div class="lang-flag">🇲🇦</div><div class="lang-name">Arabe</div><div class="lang-level">Langue maternelle</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sec-tag">Passion</div>
+        <h2 class="sec-title" style="margin-bottom:32px">Centres d'<span>intérêt</span></h2>
+        <div class="int-wrap">
+          <div class="int-pill"><span>🎨</span> Design graphique & création visuelle</div>
+          <div class="int-pill"><span>🤖</span> Outils IA & Tech</div>
+          <div class="int-pill"><span>📱</span> Marketing digital</div>
+          <div class="int-pill"><span>📈</span> E-commerce & tendances</div>
+          <div class="int-pill"><span>✍️</span> Rédaction & storytelling</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CTA ══ -->
+<div class="cta-banner">
+  <h2>Travaillons ensemble</h2>
+  <p>Disponible immédiatement en France et en remote</p>
+  <div class="cta-btns">
+    <a href="mailto:redatoto000@gmail.com" class="btn-gold">✉ redatoto000@gmail.com</a>
+    <a href="tel:+33646064391" class="btn-w-out">📞 +33 6 46 06 43 91</a>
+    <a href="https://www.linkedin.com/in/redatoto/" target="_blank" class="btn-li">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      LinkedIn
+    </a>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <p>© 2024 <span>Toto Reda</span> — Tous droits réservés</p>
+</footer>
+
+<a href="#hero" id="backToTop" aria-label="Haut de page">↑</a>
+
+<script src="js/app.js"></script>
+</body>
+</html>
